@@ -39,7 +39,7 @@ export class EventosComponent implements OnInit {
   }
 
   GetEventos(): void {
-      this.http.get('http://localhost:5000/api/ProAgil/').subscribe((resp) => {
+      this.http.get('http://localhost:5000/api/Evento/').subscribe((resp) => {
         this.eventos = resp;
         this.eventosFiltrados = resp;
       }, error => console.log(error));
