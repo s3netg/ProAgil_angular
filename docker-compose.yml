@@ -1,0 +1,10 @@
+version: '3'
+services:
+  angular-starter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: angular-starter
+    ports:
+      - '80:80'
+ 
