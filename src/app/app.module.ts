@@ -14,6 +14,7 @@ import {TooltipModule} from 'ngx-bootstrap/tooltip';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
    declarations: [
@@ -32,7 +33,8 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
     ModalModule.forRoot(),
     BsDatepickerModule.forRoot(),
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
 
 	],
    providers: [EventoService],
